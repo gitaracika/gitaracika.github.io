@@ -1,0 +1,172 @@
+main h1{
+    text-align: center;
+    font-size: 3em;
+    background-color:cadetblue;
+    font-family:'Courier New', Courier, monospace;
+    color:aliceblue
+
+}
+
+#container {
+    width: 1500px;
+    height: 100%;
+    margin: 0 auto;
+    background-color:darkcyan;
+}
+
+#elements {
+    display: grid;
+  grid-template-columns: 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px;
+  grid-template-rows: 90px 90px 90px 90px 90px 90px 90px 90px 90px 90px;
+  grid-template-areas: ". . . . . . . . . ." ". . . . . . . . . ." ". . . . . . . . . ." ". . . . . . . . . ." ". . . . . . . . . ." ". . . . . . . . . ." ". . . . . . . . . ." ". . . . . . . . . ." ". . . . . . . . . ." ". . . . . . . . . .";
+
+}
+
+.FizzBuzz {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:'Courier New', Courier, monospace;
+    width: 130px;
+    height: 60px;
+    margin:10px;
+    color:white;
+    border-style:dashed;
+    border-width:5px;
+    border-color:white;
+    transition: all 0.3s linear;
+    background: linear-gradient(to top, #c584f0 0%,#a452d4 100%);
+    
+}
+
+.Fizz {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:'Courier New', Courier, monospace;
+    width: 130px;
+    height:60px;
+    margin:10px;
+    color:white;
+    border-style:dashed;
+    border-width:5px;
+    border-color:white;
+    transition: all 0.3s linear;
+    background: linear-gradient(to top, #bb1383 0%,#d173ad 100%);
+}
+
+.Buzz {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:'Courier New', Courier, monospace;
+    width: 130px;
+    height:60px;
+    margin:10px;
+    color:white;
+    border-style:dashed;
+    border-width:5px;
+    border-color:white;
+    transition: all 0.3s linear;
+    background: linear-gradient(to top, #ee115b 0%,#c7477d 100%);
+}
+
+.Empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:'Courier New', Courier, monospace;
+    width: 130px;
+    height:60px;
+    margin:10px;
+    color:white;
+    border-style:dashed;
+    border-width:5px;
+    border-color:white;
+    transition: all 0.3s linear;
+    background: linear-gradient(to top, #793a9e 0%,#5c0b7c 100%);
+}
+
+#OptionsBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#ValueBox {
+    background-color:white;
+    
+}
+h3 {
+    display: grid;
+    font-size: 16px;
+    font-weight: 100;
+    font-family:'Courier New', Courier, monospace;
+    
+}
+
+#generate {
+    padding: 3px;
+    background-color: #50ac73;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#clear {
+    padding: 3px;
+    background-color: #908cd1;
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#generate:hover {
+    background-color:#207541;
+}
+
+#clear:hover {
+    background-color: #6f68da;
+}
+
+@media (max-width: 992px) {
+    #container {
+        width: 500px;
+        height: 100%;
+        margin : 0 auto;
+    }
+
+    #elements {
+        display: grid;
+  grid-template-columns: 70px 70px 70px 70px 70px;
+  grid-template-rows: 70px 70px 70px 70px 70px 70px 70px 70px 70px 70px 70px 70px 70px 70px 70px 70px 70px 70px 70px 70px;
+  grid-template-areas: ". . . . ." ". . . . ." ". . . . ." ". . . . ." ". . . . ." ". . . . ." ". . . . ." ". . . . ." ". . . . ." ". . . . ." ". . . . ." ". . . . ." ". . . . ." ". . . . ." ". . . . ." ". . . . ." ". . . . ." ". . . . ." ". . . . ." ". . . . .";
+    }
+
+    input[type=number]{
+        width: 100px;
+    }
+
+}
+
+@media (max-width: 576px) {
+    #container {
+        width: 300px;
+        height: 100%;
+        margin : 0 auto;
+    }
+
+    #elements {
+        display: inline;
+    }
+
+    input[type=number]{
+        width: 10px;
+    }
+
+}
